@@ -15,6 +15,21 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "Elements/*": [
+        "./src/elements/*"
+      ],
+      "Components/*": [
+        "./src/components/*"
+      ],
+      "Statics/*": [
+        "./src/statics/*"
+      ],
+      "Styles/*": [
+        "./src/statics/styles/*"
+      ],
+      "Images/*": [
+        "./src/statics/images/*"
       ]
     }
   }

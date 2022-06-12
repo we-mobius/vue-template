@@ -13,9 +13,15 @@ export default defineConfig({
   envDir: '../',
   plugins: [vue()],
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+    // https://vitejs.dev/config/#resolve-alias
+    alias: [
+      { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
+      { find: 'Elements', replacement: fileURLToPath(new URL('./src/elements', import.meta.url)) },
+      { find: 'Components', replacement: fileURLToPath(new URL('./src/components', import.meta.url)) },
+      { find: 'Statics', replacement: fileURLToPath(new URL('./src/statics', import.meta.url)) },
+      { find: 'Styles', replacement: fileURLToPath(new URL('./src/statics/styles', import.meta.url)) },
+      { find: 'Images', replacement: fileURLToPath(new URL('./src/statics/images', import.meta.url)) }
+    ]
   },
   clearScreen: false,
   server: {
