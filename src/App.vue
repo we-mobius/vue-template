@@ -8,7 +8,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <image
       alt="Vue logo"
       class="logo"
-      src="@/assets/logo.svg"
+      src="@/statics/images/logo.svg"
       width="125"
       height="125"
     />
@@ -33,7 +33,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 </template>
 
 <style>
-@import '@/assets/base.css';
+@import '@/statics/styles/base.css';
 
 #app {
   max-width: 1280px;
