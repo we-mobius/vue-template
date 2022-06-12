@@ -20,17 +20,12 @@ npm run dev
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Serve build result to preview production ready application
 
 ```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
+npm run preview
+# or
+npm run serve
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
