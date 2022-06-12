@@ -1,0 +1,10 @@
+{
+  // extend your base config so you don't have to redefine your compilerOptions
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/ts/@types/**/*.d.ts"
+  ]
+}

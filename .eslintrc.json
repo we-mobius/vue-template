@@ -1,0 +1,81 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "extends": [
+        "standard"
+      ],
+      "plugins": [],
+      "parser": "espree",
+      "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+      }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.d.ts"
+      ],
+      "extends": [
+        "standard-with-typescript",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.eslint.json"
+      },
+      "plugins": [
+        "@typescript-eslint/eslint-plugin"
+      ]
+    },
+    {
+      "files": [
+        "*.vue"
+      ],
+      "extends": [
+        "plugin:vue/vue3-recommended",
+        "standard",
+        "standard-with-typescript",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "vue-eslint-parser",
+      "parserOptions": {
+        "parser": {
+          "js": "espree",
+          "ts": "@typescript-eslint/parser",
+          "<template>": "espree"
+        },
+        "project": "./tsconfig.eslint.json",
+        "extraFileExtensions": [
+          ".vue"
+        ],
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+      },
+      "plugins": [
+        "@typescript-eslint/eslint-plugin"
+      ]
+    }
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": [
+      "error"
+    ]
+  }
+}
