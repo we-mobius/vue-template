@@ -20,7 +20,8 @@
       "parser": "espree",
       "parserOptions": {
         "ecmaVersion": 2021,
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": "./tsconfig.eslint.json"
       }
     },
     {
@@ -33,6 +34,9 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
       ],
+      "ecmaFeatures": {
+        "jsx": false
+      },
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": "latest",
@@ -66,7 +70,8 @@
           ".vue"
         ],
         "ecmaVersion": 2021,
-        "sourceType": "module"
+        "sourceType": "module",
+        "createDefaultProgram": true
       },
       "plugins": [
         "@typescript-eslint/eslint-plugin"

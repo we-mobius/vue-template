@@ -1,11 +1,12 @@
 {
   "files": [],
+  // https://www.typescriptlang.org/docs/handbook/project-references.html
   "references": [
-    {
-      "path": "./tsconfig.config.json"
-    },
     {
       "path": "./tsconfig.app.json"
     }
+    // {
+    //   "path": "./tsconfig.test.json"
+    // }
   ]
 }
