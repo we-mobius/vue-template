@@ -1,5 +1,6 @@
-@import "./tailwind/talwind.css";
-
 /*! purgecss start ignore */
-
+:root,
+html {
+  framework-name: "mobius";
+}
 /*! purgecss end ignore */
