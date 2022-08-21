@@ -1,45 +1,8 @@
 {
-  // TODO: extends a predefined base config file
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "./tsconfig.base.json",
   "include": [
-    "env.d.ts",
+    "src/env.d.ts",
     "src/**/*",
     "src/**/*.vue"
-  ],
-  "compilerOptions": {
-    "composite": true,
-    "allowJs": true,
-    "strict": true,
-    "baseUrl": ".",
-    "rootDir": "./src",
-    "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "Src/*": [
-        "./src/*"
-      ],
-      "Elements/*": [
-        "./src/elements/*"
-      ],
-      "Components/*": [
-        "./src/components/*"
-      ],
-      "Views/*": [
-        "./src/views/*"
-      ],
-      "Statics/*": [
-        "./src/statics/*"
-      ],
-      "Styles/*": [
-        "./src/statics/styles/*"
-      ],
-      "Images/*": [
-        "./src/statics/images/*"
-      ],
-      "Services/*": [
-        "./src/services/*"
-      ]
-    }
-  }
+  ]
 }
